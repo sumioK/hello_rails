@@ -8,8 +8,7 @@ class SimpleMiddleware
     end
 
     def call(env)
-        status,headers, bosy = @app.call(env)
-        @app = app
+        status,headers, body = @app.call(env)
         puts "*" * 50
         puts "*#{self.class}call(body = #{body})"
         puts "*" * 50
