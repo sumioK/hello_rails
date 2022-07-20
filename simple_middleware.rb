@@ -12,6 +12,6 @@ class SimpleMiddleware
         puts "*" * 50
         puts "*#{self.class}call(body = #{body})"
         puts "*" * 50
-        return [status, headers, bosy]
+        return [status, headers, body]
     end
 end
